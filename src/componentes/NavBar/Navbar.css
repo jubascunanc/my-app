@@ -1,0 +1,89 @@
+.navbar{
+    background-color: rgb(15, 169, 225);
+    width: 1420px;
+    height:220px;
+    display: block;
+}
+
+.App-logo{
+    width:155px;
+    
+}
+
+.Banner>img{
+    width:1420px;
+    height:480px;
+    flex-wrap: wrap;
+}
+
+.Carrito>img{
+   width:40px;
+   position:static;
+   margin-left: 90%;
+   flex-wrap: wrap;
+}
+
+h1{
+    margin:40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    margin:35px;
+    text-align: center;
+    font-size:25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+h3{
+    margin:35px;
+    text-align:left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ h4{
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+ }
+
+h5{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+  }
+
+ button:hover{
+    color: rgb(15, 169, 225);
+    background-color:rgb(255, 255, 255);
+    border-radius: 5%;
+    transform: scaleX(0,50);
+    opacity: var(5%);
+ }
+
+
+ @media all and (max-width: 1600px) {
+    img{
+      width: 100%;
+    }
+    .navbar, .Banner, body, header{
+      width: 100%;
+    }
+  
+    p{
+      width:100%;
+    }
+  
+    button{
+      width: 20%;
+    }
+  }

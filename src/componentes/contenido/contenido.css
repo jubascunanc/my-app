@@ -1,0 +1,11 @@
+.contenido{
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login{
+    width: 55px;
+    color:aqua;
+}
