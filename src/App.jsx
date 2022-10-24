@@ -1,19 +1,27 @@
+
 import logo from './imagen/logo-emprende.png';
-import Navbar from './componentes/NavBar/Navbar.js';
+import Navbar from './componentes/NavBar/Navbar.jsx';
 import Banner from './imagen/education-teacher.jpg';
-import Login from './componentes/Login/Login.js';
+import Login from './componentes/Login/Login.jsx';
+import { Link } from 'react-router-dom'
 import './componentes/NavBar/Navbar.css';
 import './componentes/contenido/contenido.css';
-import './componentes/contenido/Bienvenida.js';
-import Bienvenida from './componentes/contenido/Bienvenida.js';
-import Boton from './componentes/contenido/Boton.js';
+import './componentes/contenido/Bienvenida.jsx';
+import Bienvenida from './componentes/contenido/Bienvenida.jsx';
+import Boton from './componentes/contenido/Boton.jsx';
 import carrito from './componentes/CartWidget/asset/shopping-cart.png';
+import user from './componentes/CartWidget/asset/user.png';
+import Card from './componentes/CartWidget/ItemListContainer/cards.jsx';
+
 
 function App() {
+
+
   let bienvenida= '¡Bienvenidos a Mprende!';
   let comenzar= 'Inscribete Aquí';
   let login= 'Inicio de sesión';
-
+  let cards= 'Cursos';
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -21,11 +29,25 @@ function App() {
         <div className="Carrito">
       <img src={carrito}/>
     </div>
+    <div className='Usuario'>
+    <img src={user} className="user-img" alt="user"/>
+    </div>
       <img src={logo} className="App-logo" alt="logo"/>
       <div className='Banner'>
-    <div className='Usuario'>
+          <h4>
+             <Bienvenida prop={bienvenida}/>
+          </h4>
+    <img src={Banner}/>    
+    <div className='contenido'>
+             <button>
+             <Boton prop={comenzar}/>
+             </button>
+             <div className='Login'>
+         <button>
+             <Login prop={login}/>
+         </button>
+        </div>
     </div>
-      <img src={Banner}/>
       </div>
         <h1>Mprende Eclass</h1>
            <h2>Cursos en linea para estudiantes</h2>
@@ -39,27 +61,19 @@ function App() {
             Estudia desde casa sin problemas y con mentores expertos en cursos 100% Online y certificados.
             Se parte de una comunidad de estudiantes virtuales.
           </p>
+
           <h2>Cursos disponibles:</h2>
+
+          <div className='Cards-items'>
+            <h3>Aprende aquí</h3>
+            <div className='cards-details'>
+            <Card prop={cards}/>
+          
+            </div>
           </div>
-        <div className='contenido'>
-          <h4>
-             <Bienvenida prop={bienvenida}/>
-          </h4>
-             <button>
-             <Boton prop={comenzar}/>
-             </button>
-        <div className='Login'>
-         <button>
-             <Login prop={login}/>
-         </button>
         </div>
-        <h5>
-        Puedes ingresar con tu cuenta existente, o crear una aquí en el formulario:
-        </h5>
-        </div>
-        <a>
     
-        </a>
+
       </header>
     </div>
   );

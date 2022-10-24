@@ -6,7 +6,7 @@
 }
 
 .App-logo{
-    width:155px;
+    width:160px;
     
 }
 
@@ -21,6 +21,15 @@
    position:static;
    margin-left: 90%;
    flex-wrap: wrap;
+}
+
+.user-img{
+  width:35px;
+  position:static;
+  padding:0px;
+  margin-left: 85%;
+  margin-top: -5%;
+
 }
 
 h1{
@@ -44,9 +53,10 @@ h3{
 }
 
  h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 40px;
-    color: aliceblue;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
  }
 
 h5{
@@ -70,12 +80,15 @@ p{
     opacity: var(5%);
  }
 
+ .Boton{
+  margin-top: 5%;
+ }
 
  @media all and (max-width: 1600px) {
     img{
       width: 100%;
     }
-    .navbar, .Banner, body, header{
+    .navbar, .Banner, body {
       width: 100%;
     }
   
