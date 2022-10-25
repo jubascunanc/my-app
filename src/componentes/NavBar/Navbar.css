@@ -1,12 +1,26 @@
 .navbar{
     background-color: rgb(15, 169, 225);
     width: 1420px;
-    height:220px;
+    height:280px;
     display: block;
 }
 
+
+.nav-link.active{
+  color:white;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link{
+  color:white;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 .App-logo{
-    width:160px;
+    width:200px;
     
 }
 
@@ -53,7 +67,7 @@ h3{
 }
 
  h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 50px;
     color: rgb(0, 0, 0);
@@ -84,11 +98,17 @@ p{
   margin-top: 5%;
  }
 
+.btn-primary{
+  width:90px;
+  height: 50px;
+}
+
+
  @media all and (max-width: 1600px) {
     img{
       width: 100%;
     }
-    .navbar, .Banner, body {
+    .navbar, .banner>img, body {
       width: 100%;
     }
   

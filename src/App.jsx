@@ -1,7 +1,7 @@
 
 import logo from './imagen/logo-emprende.png';
 import Navbar from './componentes/NavBar/Navbar.jsx';
-import Banner from './imagen/education-teacher.jpg';
+import Banner from './imagen/clases-online.jpg';
 import Login from './componentes/Login/Login.jsx';
 import { Link } from 'react-router-dom'
 import './componentes/NavBar/Navbar.css';
@@ -12,20 +12,31 @@ import Boton from './componentes/contenido/Boton.jsx';
 import carrito from './componentes/CartWidget/asset/shopping-cart.png';
 import user from './componentes/CartWidget/asset/user.png';
 import Card from './componentes/CartWidget/ItemListContainer/cards.jsx';
+import Menu from './componentes/NavBar/menu.js';
 
 
 function App() {
 
+const handleChangeInput=event=>{
+  console.log(event.target.value)
+}
 
   let bienvenida= '¡Bienvenidos a Mprende!';
   let comenzar= 'Inscribete Aquí';
   let login= 'Inicio de sesión';
   let cards= 'Cursos';
+  let menu= 'Menu';
   
   return (
     <div className="App">
       <header className="App-header">
         <div class="navbar" style={Navbar} id="navbar" >
+          <div>
+            <input onChange={handleChangeInput} type="text" />
+          </div>
+          <nav>
+        <Menu prop={menu}/>
+        </nav>
         <div className="Carrito">
       <img src={carrito}/>
     </div>
@@ -42,7 +53,7 @@ function App() {
              <button>
              <Boton prop={comenzar}/>
              </button>
-             <div className='Login'>
+             <div className="Login">
          <button>
              <Login prop={login}/>
          </button>
