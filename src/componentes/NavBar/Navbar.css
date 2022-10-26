@@ -18,10 +18,14 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input{
+  margin:8px;
+}
+
 
 .App-logo{
     width:200px;
-    
+    margin-top: -50px;
 }
 
 .Banner>img{
@@ -45,6 +49,9 @@
   margin-top: -5%;
 
 }
+
+
+
 
 h1{
     margin:40px;

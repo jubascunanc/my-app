@@ -32,7 +32,8 @@ const handleChangeInput=event=>{
       <header className="App-header">
         <div class="navbar" style={Navbar} id="navbar" >
           <div>
-            <input onChange={handleChangeInput} type="text" />
+            <input onChange={handleChangeInput} type="text"/> 
+            <input type="submit" value="Buscar" id="enviar"></input>
           </div>
           <nav>
         <Menu prop={menu}/>
