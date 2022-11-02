@@ -11,11 +11,13 @@ import Bienvenida from './componentes/contenido/Bienvenida.jsx';
 import Boton from './componentes/contenido/Boton.jsx';
 import carrito from './componentes/CartWidget/asset/shopping-cart.png';
 import user from './componentes/CartWidget/asset/user.png';
-import Card from './componentes/CartWidget/ItemListContainer/cards.jsx';
-import Menu from './componentes/NavBar/menu.js';
+import Card from './componentes/CartWidget/cards.jsx';
+import Menu from './componentes/NavBar/menu.jsx';
+import { NavItem } from 'react-bootstrap';
 
 
 function App() {
+
 
 const handleChangeInput=event=>{
   console.log(event.target.value)
@@ -26,7 +28,9 @@ const handleChangeInput=event=>{
   let login= 'Inicio de sesión';
   let cards= 'Cursos';
   let menu= 'Menu';
-  
+  let evento= 'event';
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -52,7 +56,7 @@ const handleChangeInput=event=>{
     <img src={Banner}/>    
     <div className='contenido'>
              <button>
-             <Boton prop={comenzar}/>
+             <Boton prop={comenzar} />
              </button>
              <div className="Login">
          <button>
@@ -80,12 +84,9 @@ const handleChangeInput=event=>{
             <h3>Aprende aquí</h3>
             <div className='cards-details'>
             <Card prop={cards}/>
-          
             </div>
           </div>
         </div>
-    
-
       </header>
     </div>
   );

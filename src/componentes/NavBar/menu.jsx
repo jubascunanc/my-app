@@ -1,19 +1,21 @@
 import Nav from 'react-bootstrap/Nav';
+import { BrowserRouter } from 'react-router-dom';
 
 function BasicExample() {
   return (
+    <BrowserRouter>
     <Nav
       activeKey="/home"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link href="/home">Inicio</Nav.Link>
+        <Nav.Link href="/inicio">Inicio</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Cursos</Nav.Link>
+        <Nav.Link eventKey="/Cursos">Cursos</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Perfil</Nav.Link>
+        <Nav.Link eventKey="./Perfil">Perfil</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="disabled">
@@ -21,6 +23,7 @@ function BasicExample() {
         </Nav.Link>
       </Nav.Item>
     </Nav>
+    </BrowserRouter>
   );
 }
 
