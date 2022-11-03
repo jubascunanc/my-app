@@ -1,6 +1,7 @@
 
 import logo from './imagen/logo-emprende.png';
 import Navbar from './componentes/NavBar/Navbar.jsx';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Banner from './imagen/clases-online.jpg';
 import Login from './componentes/Login/Login.jsx';
 import { Link } from 'react-router-dom'
@@ -11,7 +12,7 @@ import Bienvenida from './componentes/contenido/Bienvenida.jsx';
 import Boton from './componentes/contenido/Boton.jsx';
 import carrito from './componentes/CartWidget/asset/shopping-cart.png';
 import user from './componentes/CartWidget/asset/user.png';
-import Card from './componentes/CartWidget/cards.jsx';
+import Card from './componentes/CartWidget/ItemListContainer/Cart/Card.jsx';
 import Menu from './componentes/NavBar/menu.jsx';
 import { NavItem } from 'react-bootstrap';
 
@@ -79,7 +80,6 @@ const handleChangeInput=event=>{
           </p>
 
           <h2>Cursos disponibles:</h2>
-
           <div className='Cards-items'>
             <h3>Aprende aquí</h3>
             <div className='cards-details'>
