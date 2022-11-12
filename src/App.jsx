@@ -13,7 +13,7 @@ import carrito from "./componentes/CartWidget/asset/shopping-cart.png";
 import user from "./componentes/CartWidget/asset/user.png";
 import Card from "./componentes/CartWidget/ItemListContainer/Cart/Card.jsx";
 import Menu from "./componentes/NavBar/menu.jsx";
-import { NavItem } from "react-bootstrap";
+
 
 function App() {
   const handleChangeInput = (event) => {
