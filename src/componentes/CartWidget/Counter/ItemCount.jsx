@@ -1,26 +1,67 @@
-import App from "../../../App";
+import React from "react"
+import {useState} from 'react'
+import './ItemCount.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import Swal from "sweetalert2";
 
-function ItemCount () {
-
-const getItem= () =>{
-    ItemList.map ({getItem})
-    console.log("item guardado");
-}
+const ItemCount  = ({onAdd, stock, initial=1}) => {
 
 
-const ItemList = ({id, img, nombre, precio, cantidad}) => {
-    const {remover} = useCartContext ();
-;
+    const [quantity, setQuantity] = useState(initial)
 
-return (    
-    <div className='contenedorCarro'>
-        <img src={img} alt={nombre}/>
-        <h1 className="name">{nombre}</h1>
-        <p className="price">Precio: ${precio}</p>
-        <p className="Total">Total: ${cantidad * precio}</p>
-        <button onClick={()=>remover(id)}> Eliminar</button>
-    </div>
-)
-}
+    const increment = () => {
+        if (quantity < stock) {
+            setQuantity(quantity + 1);
+        }
+        else {
+            Swal.fire({
+                title: "No hay mas stock",
+                icon: "success",
+                buttons: true,
+        
+            })
+    }
+    };
+    
+    const decrement = () => {
+        if (quantity > 1) {
+        setQuantity(quantity - 1);
+        }
+    };
 
-}
+
+
+    return (
+        
+        <div>
+            
+                <div className="contador">
+                    <button id="addButton" className="elements" onClick={decrement}> - </button> 
+                    <h2 className="elements" id="number">{quantity}</h2>
+                    <button id="subsButton"  className="elements" onClick={increment}> + </button>
+                </div>
+
+                    <div className="botonFinal">
+                    <button id ="cartButton" className="ui bottom attached button" onClick={() =>
+                    
+                    {onAdd (quantity)
+                        Swal.fire({
+                            title: "Producto Agregado",
+                            icon: "success",
+                            buttons: true,
+                    
+                        })
+                        }}>
+                        <FontAwesomeIcon icon ={faCartShopping} />
+                        Agregar al Carrito
+                    </button>  
+                </div>
+                
+
+        </div>
+        
+        )
+} 
+
+export default ItemCount
