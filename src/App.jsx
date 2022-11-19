@@ -4,6 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Banner from "./imagen/clases-online.jpg";
 import Login from "./componentes/Login/Login.jsx";
 import { Link } from "react-router-dom";
+import './componentes/Cart/Cart';
+import './componentes/CheckOut/CheckOut';
+import './componentes/Item/Item';
+import './componentes/ItemCart/ItemCart';
+import './componentes/ItemCount/ItemCount';
+import './componentes/ItemDetail/ItemDetail';
+import './componentes/ItemList/ItemList';
+import './componentes/ItemListContainer/ItemListContainer';
 import "./componentes/NavBar/Navbar.css";
 import "./componentes/contenido/contenido.css";
 import "./componentes/contenido/Bienvenida.jsx";
@@ -11,6 +19,7 @@ import Bienvenida from "./componentes/contenido/Bienvenida.jsx";
 import Boton from "./componentes/contenido/Boton.jsx";
 import carrito from "./componentes/asset/shopping-cart.png";
 import user from "./componentes/asset/user.png";
+import './componentes/CartWidget/CartWidget'
 import Card from "./componentes/CartWidget/Card.jsx";
 import Menu from "./componentes/NavBar/menu.jsx";
 
