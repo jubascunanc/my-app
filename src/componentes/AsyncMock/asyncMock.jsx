@@ -1,29 +1,53 @@
 
-const productos=[
+const products=[
+    {
+     id: '4405',
+     name: 'Curso programación Front end',
+     price: '7000',
+     categoryID: 'Cursos',
+     img: './imagenes/programador-frontend.jpeg',
+     stock: '100',
+    },
     {
      id: '1202',
-     nombre: 'Marketing digital',
-     precio: '4000',
+     name: 'Marketing digital',
+     price: '4000',
      categoryID: 'Cursos',
      img:'./imagenes/marketing-digital.jpeg',
      stock: '0',
     },
     {
      id: '1310',
-     nombre: 'Finanzas Personales',
-     precio: '5000',
+     name: 'Finanzas Personales',
+     price: '5000',
      categoryID:'Cursos',
      img:'./imagenes/finanzas-personales.jpg',
      stock: '1',
     },
     {
     id: '0302',
-    nombre: 'Clases ingles',
-    precio: '3000',
+    name: 'Clases ingles',
+    price: '3000',
     categoryID: 'Cursos',
     img: './imagenes/clases-ingles.jpg',
     stock: '100',
     },
+    {
+     id:'1901',
+     name: 'Clases Español',
+     price: '4000',
+     categoryID: 'Cursos',
+     img: './imagenes/curso-gramatica-espanola-gratis.jpg',
+     stock: '100',
+    },
+    {
+     id: '1997',
+     name: 'Aprender a leer y escribir',
+     price: '5000',
+     categoryID: 'Cursos',
+     img: './imagenes/curso-español.jpg',
+     stock: '100',
+    }
     ];
     
     

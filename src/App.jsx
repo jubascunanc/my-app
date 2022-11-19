@@ -9,8 +9,8 @@ import "./componentes/contenido/contenido.css";
 import "./componentes/contenido/Bienvenida.jsx";
 import Bienvenida from "./componentes/contenido/Bienvenida.jsx";
 import Boton from "./componentes/contenido/Boton.jsx";
-import carrito from "./componentes/CartWidget/asset/shopping-cart.png";
-import user from "./componentes/CartWidget/asset/user.png";
+import carrito from "./componentes/asset/shopping-cart.png";
+import user from "./componentes/asset/user.png";
 import Card from "./componentes/CartWidget/Card.jsx";
 import Menu from "./componentes/NavBar/menu.jsx";
 
@@ -25,7 +25,7 @@ function App() {
   let login = "Inicio de sesión";
   let cards = "Cursos";
   let menu = "Menu";
-  let evento = "event";
+
 
   return (
     <div className="App">
