@@ -1,8 +1,6 @@
 import React from "react"
 import {useState} from 'react'
 import './ItemCount.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 import Swal from "sweetalert2";
 
 const ItemCount  = ({onAdd, stock, initial=1}) => {
@@ -53,8 +51,6 @@ const ItemCount  = ({onAdd, stock, initial=1}) => {
                     
                         })
                         }}>
-                        <FontAwesomeIcon icon ={faCartShopping} />
-                        Agregar al Carrito
                     </button>  
                 </div>
                 

@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { getDoc, doc, } from 'firebase/firestore'
-import {dataBase } from '../../Service/Firebase/Index'
+import {dataBase } from '../../Service/Firebase/index'
 
 
 
-const ItemDetailContainer =() => {
+const ItemListContainer =() => {
     const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(true)
     const {productId} = useParams()

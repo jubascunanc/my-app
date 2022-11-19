@@ -1,12 +1,11 @@
 import { useState, useContext } from "react"
 import { useNavigate } from "react-router-dom"
-import  ClientForm  from '../Form/Form'
-import { ChaoticOrbit } from '@uiball/loaders'
+import ClientForm from "../Form/Form";
 import { CartContext } from "../../CartContext/CartContext"
 import Swal from "sweetalert2";
 import { useOrdersFromFirestore } from "../../Service/Firestore/Orders"
 
-import'../Checkout/Checkout.css'
+import'../CheckOut/CheckOut.css'
 
 
 const Checkout = () => {
@@ -65,15 +64,6 @@ const Checkout = () => {
     }
 
     
-
-
-    if(loading) {
-        return <div className="conteinerCheckout">
-            <h1>Se esta procesando su pedido...</h1>
-            <br></br>
-            <div className="chaotic-orbit">{ ChaoticOrbit } </div>
-        </div>
-    }
 
     return (    
         <div>
